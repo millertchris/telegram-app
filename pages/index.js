@@ -50,7 +50,7 @@ export default function Home() {
             </div>
             <div className="col">
               <div className="image phone">
-                {/* <img src="/phone.jpeg" alt="Image of telegram mobile app"/> */}
+                <img src="/telegram-app.png" alt="Image of telegram mobile app" className="iphone" />
               </div>
               <div className="caption">
                 <img src="/apple-logo.svg" alt="Apple logo" className="apple-logo" />

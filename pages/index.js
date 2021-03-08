@@ -28,12 +28,12 @@ export default function Home() {
         <div className="wrapper">
           <div className="row">
             <div className="col">
+              <img src="/gram.svg" alt="Graphic of the letters gram" className="accent-graphic" />
               <div className="content">
-                <h1 className="title">Telegram a new era of messaging.</h1>
+                <h1 className="title">Telegram a new <br />era of messaging.</h1>
                 <p className="copy">Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed.</p>
                 <a href="#" className="btn">Download</a>
               </div>
-
               <div className="recent-news">
                 <div className="label">Recent News</div>
                 <div className="row">
@@ -49,6 +49,7 @@ export default function Home() {
               </div>
             </div>
             <div className="col">
+              <img src="/tele.svg" alt="Graphic of the letters tele" className="accent-graphic" />
               <div className="image phone">
                 <img src="/telegram-app.png" alt="Image of telegram mobile app" className="iphone" />
               </div>

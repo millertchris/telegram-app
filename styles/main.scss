@@ -44,6 +44,7 @@ h1, h2 {
   width: 100%;
   max-width: 1200px;
   margin: auto;
+  padding: 0 20px;
 }
 
 header {
@@ -99,26 +100,39 @@ header {
     display: flex;
   }
   .title {
-    font-size: 3em;
+    font-size: 3.5em;
     margin: 0 0 20px 0;
   }
   .copy {
     margin: 0 0 20px 0;
   }
+  .accent-graphic {
+    position: absolute;
+    opacity: 0.2;
+  }
   .col {
     display: flex;
     width: 50%;
     height: 100vh;
-    padding: 60px;
     &:nth-child(1) {
       justify-content: center;
       flex-direction: column;
+      padding: 60px 60px 60px 0;
       color: #222222;
+      .accent-graphic {
+        bottom: 220px;
+        left: -200px;
+      }
     }
     &:nth-child(2) {
       display: flex;
       align-items: center;
+      padding: 60px 0 60px 60px;
       color: #fff;
+      .accent-graphic {
+        top: 220px;
+        right: -60px;
+      }
     }
   }
   .iphone {
@@ -132,7 +146,7 @@ header {
   .recent-news {
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 20px;
     width: 50vw;
     padding-bottom: 40px;
     .label {

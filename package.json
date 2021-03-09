@@ -8,9 +8,14 @@
     "start": "next start"
   },
   "dependencies": {
+    "anime": "^0.1.2",
+    "babel": "^6.23.0",
+    "gsap": "^3.6.0",
     "next": "10.0.5",
     "react": "17.0.1",
+    "react-anime": "^4.0.1",
     "react-dom": "17.0.1",
+    "react-gsap": "^2.2.1",
     "sass": "^1.32.8"
   }
 }

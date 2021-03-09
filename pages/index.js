@@ -103,12 +103,9 @@ export default function Home() {
           <div className="row">
             <div className="col">
               <div className="content">
-
                 <Tween from={{ x: '400px' }} to={{ x: '0' }} duration={3} ease="expo(1.7)">
                   <h1 className="title">Simple and secure alternative for communicating.</h1>
-                  {/* <h1 className="title">Simply secure.</h1> */}
                 </Tween>
-
                 <Tween from={{ opacity: '0' }} to={{ opacity: '1' }} duration={3} delay={2} ease="expo(1)">
                   <p className="copy">Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed.</p>
                   <a href="https://apps.apple.com/app/telegram-messenger/id686449807" className="btn">Download App</a>

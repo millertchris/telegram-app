@@ -6,7 +6,6 @@ export default function Home() {
   function triggerMenu() {
     document.querySelector(".hamburger").classList.toggle('active');
     document.querySelector("nav").classList.toggle('active');
-    console.log('test');
   }
   return (
     <div>
@@ -19,13 +18,13 @@ export default function Home() {
         <meta name="description" content="Pure instant messaging — simple, fast, secure, and synced across all your devices. One of the world's top 10 most downloaded apps with over 500 million active users." />
 
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://metatags.io/" />
+        <meta property="og:url" content="https://telegram-app-vert.vercel.app/" />
         <meta property="og:title" content="Telegram | Simple and Secure" />
         <meta property="og:description" content="Pure instant messaging — simple, fast, secure, and synced across all your devices. One of the world's top 10 most downloaded apps with over 500 million active users." />
         <meta property="og:image" content="/telegram-og.png" />
 
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://metatags.io/" />
+        <meta property="twitter:url" content="https://telegram-app-vert.vercel.app/" />
         <meta property="twitter:title" content="Telegram | Simple and Secure" />
         <meta property="twitter:description" content="Pure instant messaging — simple, fast, secure, and synced across all your devices. One of the world's top 10 most downloaded apps with over 500 million active users." />
         <meta property="twitter:image" content="/telegram-og.png" />

@@ -169,12 +169,12 @@ export default function Home() {
         <div className="wrapper">
           <div className="row">
             <div className="col">
-              <button class="close" onClick={closeModal}>Close x</button>
+              <button className="close" onClick={closeModal}>Close x</button>
               <div className="content">
                 <h2>Passionate projects by passionate people.</h2>
                 <p>This landing page was created by the Prolific Digital, a creative agency focused on expressing brands through human-centered design.</p>
                 <p>We like to create fun landing pages from time to time where team members pick a topic or brand and we explore what that experience feels like.</p>
-                <a href="https://prolificdigital.com" class="btn">Come visit us</a>
+                <a href="https://prolificdigital.com" className="btn">Come visit us</a>
               </div>
             </div>
           </div>

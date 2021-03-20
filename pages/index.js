@@ -3,6 +3,14 @@ import React from 'react';
 import { Controls, PlayState, Tween, DrawSVGPlugin } from 'react-gsap';
 
 export default function Home() {
+  function message() {
+    document.querySelector(".modal").classList.add("active");
+  }
+
+  function closeModal() {
+    document.querySelector(".modal").classList.remove("active");
+  }
+
   function triggerMenu() {
     document.querySelector(".hamburger").classList.toggle('active');
     document.querySelector("nav").classList.toggle('active');
@@ -80,11 +88,11 @@ export default function Home() {
                 </button>
                 <nav>
                   <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Apps</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">API</a></li>
-                    <li><a href="#">Protocol</a></li>
+                    <li><a href="#" onClick={message}>Home</a></li>
+                    <li><a href="#" onClick={message}>Apps</a></li>
+                    <li><a href="#" onClick={message}>FAQ</a></li>
+                    <li><a href="#" onClick={message}>API</a></li>
+                    <li><a href="#" onClick={message}>Protocol</a></li>
                   </ul>
                 </nav>
               </div>
@@ -104,10 +112,11 @@ export default function Home() {
             <div className="col">
               <div className="content">
                 <Tween from={{ x: '400px' }} to={{ x: '0' }} duration={3} ease="expo(1.7)">
-                  <h1 className="title">Simple and secure alternative for communicating.</h1>
+                  {/* <h1 className="title">Simple and secure alternative for communicating.</h1> */}
+                  <h1 className="title">Tell a friend. Telegram.</h1>
                 </Tween>
                 <Tween from={{ opacity: '0' }} to={{ opacity: '1' }} duration={3} delay={2} ease="expo(1)">
-                  <p className="copy">Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed.</p>
+                  <p className="copy">Telegram is a cloud-based mobile and desktop messaging app with a focus on security, speed, and simplicity.</p>
                   <a href="https://apps.apple.com/app/telegram-messenger/id686449807" className="btn">Download App</a>
                 </Tween>
               </div>
@@ -156,6 +165,21 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <div className="modal">
+        <div className="wrapper">
+          <div className="row">
+            <div className="col">
+              <button class="close" onClick={closeModal}>Close x</button>
+              <div className="content">
+                <h2>Passionate projects by passionate people.</h2>
+                <p>This landing page was created by the Prolific Digital, a creative agency focused on expressing brands through human-centered design.</p>
+                <p>We like to create fun landing pages from time to time where team members pick a topic or brand and we explore what that experience may look like.</p>
+                <a href="https://prolificdigital.com" class="btn">Visit us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }

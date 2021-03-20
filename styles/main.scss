@@ -19,6 +19,7 @@ $mobile: 460px;
 
 html,
 body {
+  line-height: 1.4;
   overflow-x: hidden;
 }
 
@@ -57,6 +58,7 @@ h1, h2 {
 }
 
 .btn {
+  display: inline-block;
   font-size: 1.25em;
   padding: 10px 30px;
   color: #fff;
@@ -186,6 +188,7 @@ header {
     }
   }
   .content {
+    max-width: 460px;
     margin-bottom: 60px;
     @media screen and (max-width: $tablet) {
       text-align: center;
@@ -387,4 +390,49 @@ path:nth-child(6) {
 }
 .active path:nth-child(6) {
   transform: translateX(9px) translateY(1px) rotate(45deg);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 9999;
+  overflow-y: scroll;
+  &.active {
+    display: block;
+  }
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+  }
+  .col {
+    position: relative;
+    // max-width: 700px;
+  }
+  h2 {
+    font-size: 3em;
+    @media screen and (max-width: 680px) {
+      font-size: 2em;
+    }
+  }
+  p {
+    font-size: 2em;
+    @media screen and (max-width: 680px) {
+      font-size: 1.25em;
+    }
+  }
+  .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
 }
